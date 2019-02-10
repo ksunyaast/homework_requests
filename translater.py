@@ -1,9 +1,8 @@
 import requests
 
-API_KEY = 'trnsl.1.1.20161025T233221Z.47834a66fd7895d0.a95fd4bfde5c1794fa433453956bd261eae80152'
-URL = 'https://translate.yandex.net/api/v1.5/tr.json/translate'
-
 def translate_it(source_path, result_path, from_lang, to_lang='ru'):
+    API_KEY = 'trnsl.1.1.20161025T233221Z.47834a66fd7895d0.a95fd4bfde5c1794fa433453956bd261eae80152'
+    URL = 'https://translate.yandex.net/api/v1.5/tr.json/translate'
     print('Начался перевод файла -', source_path)
     def translate_f():
         with open(source_path, encoding='utf-8') as source_f:
